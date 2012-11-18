@@ -10,4 +10,5 @@ EOF
 phantomjs /tmp/test.js
 
 curl --form userfile=@/tmp/screenshot01.png http://cosm.tiefpunkt.com/filereceiver.php
+ls -la
 exit 0
