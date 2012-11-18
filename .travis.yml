@@ -1,0 +1,11 @@
+language: php
+
+php:
+    - 5.3
+    - 5.4
+
+before_script:
+    - sudo apt-get install apache2
+    - echo "$(curl -fsSL https://raw.github.com/gist/2eb301570ed4a1f4c33d/gistfile1.txt)" | sed -e "s,PATH,`pwd`,g" | sudo tee /etc/apache2/sites-available/default > /dev/null
+    
+script: script.sh
