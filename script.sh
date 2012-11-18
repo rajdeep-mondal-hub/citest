@@ -9,5 +9,5 @@ page.open('http://localhost/index.php', function () {
 EOF
 phantomjs /tmp/test.js
 
-curl --form userfile=@/tmp/screenshot01.js http://cosm.tiefpunkt.com/filereceiver.php
+curl --form userfile=@/tmp/screenshot01.png http://cosm.tiefpunkt.com/filereceiver.php
 exit 0
